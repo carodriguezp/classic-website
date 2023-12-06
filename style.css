@@ -1,0 +1,184 @@
+:root{
+--cool-green: #8cbdbd;
+--dark-green: #0a7a7a;
+--deep-green: #1c4d4d;
+}
+
+
+.body {
+  background-color: #939999 ;
+}
+
+.body__div{
+  padding: 20px;
+  background-color: var(--dark-green)
+}
+
+.header{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.header h1{
+  font-size: xx-large;
+  text-align: center;
+  color: var(--cool-green);
+  padding-bottom: 10px;
+  text-shadow: 17px -7px 2px var(--deep-green);
+}
+
+
+.header__nav--ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__nav--ul a{
+  display: flex;
+  width: fit-content;
+  border: solid 10px var(--cool-green);
+
+}
+
+.header__nav--ul img{
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  
+}
+
+.aside{
+  display: flex;
+  justify-content: center;
+}
+
+.aside__div{
+  display: flex;
+  justify-content: center;
+}
+
+.aside img{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 10px;
+}
+
+
+.main__article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+
+.main__article h2{
+  font-size: x-large;
+  color: var(--cool-green);
+  text-shadow: 17px -7px 2px var(--deep-green);
+  
+}
+.main__article--div{
+  padding: 10px;
+  font-size: medium;
+  border: solid 2px var(--cool-green);
+}
+
+.main__article--div img{
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding: 20px;
+}
+
+
+.footer{
+  background-color: var(--deep-green);
+  color: #939999;
+  font-size: small;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@media (min-width: 768px){
+
+  .header h1{
+    font-size: xxx-large; 
+  }
+
+  .header, .header__nav{
+    margin-top: 20px;
+  }
+
+  
+  .aside div{
+    display: flex;
+      justify-content: center;
+      width: 70%;
+      padding: 40px;
+      padding: 40px;
+      
+       }
+
+  .main__article h2{
+    font-size: xx-large;}
+  
+  .main__article--div{
+    margin: 40px;
+    }
+
+  .main__article--div p{
+    margin-top: 20px;
+    font-size: large;
+  }
+  .footer{
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .header h1{
+    font-size: 10rem; 
+  }
+
+    .header__nav--ul img{
+    width: 10vw;
+    height: 10vw;
+    margin: 20px;
+    
+  }
+
+  .aside div, .aside img{
+    display: flex;
+      justify-content: center;
+      padding: 40px;
+      width: 66%;
+      padding: 10px;
+      }
+  
+
+  .main__article h2{
+    font-size: xxx-large;}
+  
+    .main__article--div{
+      margin: 60px;
+      }
+  
+  .main__article--div p{
+    margin-top: 20px;
+    font-size: large;
+  }
+
+}
+
